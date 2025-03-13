@@ -1,8 +1,9 @@
 import { Sequelize } from "sequelize";
 
-const sequelizeDb = new Sequelize("tanami", "tanami", "tanamipassword", {
-    host: "localhost",
+const sequelizeDb = new Sequelize("yw82de7mzayedo3n", "z0ae64y37t7n7uj2", "jvew5f58vk72hm84", {
+    host: "ijj1btjwrd3b7932.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     dialect: "mysql",
+    port: 3306,
     logging: false,
 });
 
