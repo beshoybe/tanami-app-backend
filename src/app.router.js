@@ -6,6 +6,9 @@ import localeMiddleware from "i18next-http-middleware";
 import i18next from "./i18n.js";
 
 const appRouter = (app, express) => {
+
+
+
   // Enable CORS
   app.use(cors({ origin: true, credentials: true }));
 
@@ -14,6 +17,10 @@ const appRouter = (app, express) => {
 
   // Enable i18n middleware
   app.use(localeMiddleware.handle(i18next));
+
+  app.get("/", (req, res) => {
+    return res.status(200).json({ message: req.t("welcome") });
+  });
 
   // Define routes
   app.use("/auth", authRouter);
