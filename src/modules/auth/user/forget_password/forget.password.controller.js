@@ -12,7 +12,7 @@ const userForgetPasswordController = asyncHandler(async (req, res) => {
         const user = await User.findOne({ where: { email } });
 
         if (!user) {
-            return res.status(400).json({ message: req.t("error.emailNotRegistered") });
+            return res.status(400).json({ message: req.t("error.emailNotRegistred") });
         }
 
         // ✅ Generate a 6-digit OTP
