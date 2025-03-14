@@ -36,6 +36,9 @@ const userResetPasswordController = asyncHandler(async (req, res) => {
         });
 
     } catch (error) {
+        if (error.name === "TokenExpiredError") {
+            return res.status(410).json({ message: req.t("error.expiredOTP") });
+        }
         console.error("Reset Password Error:", error);
         res.status(500).json({ message: req.t("error.serverError") });
     }
