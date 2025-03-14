@@ -20,7 +20,7 @@ const userResetPasswordController = asyncHandler(async (req, res) => {
         // ✅ Update user's password & clear OTP fields
         user.password = password;
         user.otp = null;
-        user.otpExpiry = null;
+        user.otpExpires = null;
         await user.save();
         const tokenPayload = {
             id: user.id,  // ✅ Use `id` instead of `_id`

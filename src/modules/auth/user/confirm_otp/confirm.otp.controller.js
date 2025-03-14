@@ -9,16 +9,16 @@ const confirmOtpController = async (req, res) => {
         const user = await User.findOne({ where: { email } });
 
         if (!user) {
-            return res.status(400).json({ message: req.t("error.emailNotRegistered") });
+            return res.status(400).json({ message: req.t("error.emailNotRegistred") });
         }
 
         // ✅ Check if OTP is correct
         if (!user.otp || user.otp !== otp) {
             return res.status(400).json({ message: req.t("error.invalidOTP") });
         }
-
+        console.log(new Date(), user.otpExpires);
         // ✅ Check if OTP is expired
-        if (user.otpExpiry && new Date() > user.otpExpiry) {
+        if (user.otpExpires && new Date() > user.otpExpires) {
             return res.status(400).json({ message: req.t("error.expiredOTP") });
         }
         const tokenPayload = {
