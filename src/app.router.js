@@ -6,6 +6,7 @@ import localeMiddleware from "i18next-http-middleware";
 import i18next from "./i18n.js";
 import { protectRoute } from "./middleware/auth.middleware.js";
 import homeController from "./modules/home/home.controller.js";
+import investmentsController from "./modules/investments/investments,controller.js";
 
 const appRouter = (app, express) => {
 
@@ -28,6 +29,8 @@ const appRouter = (app, express) => {
   app.use("/auth", authRouter);
 
   app.get("/home",protectRoute,homeController);
+
+  app.get("/investments",protectRoute,investmentsController);
 
   // Handle invalid routes
   app.all("*", (req, res) => {
