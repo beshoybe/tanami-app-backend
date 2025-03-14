@@ -4,43 +4,56 @@
         "name": "Stocks (S&P 500 Index Fund)",
         "expected_return": "8-12% annually",
         "duration": "5+ years",
-        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
+
       },
       {
         "name": "Real Estate (Rental Properties)",
         "expected_return": "6-12% annually",
         "duration": "10+ years",
-        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
+
       },
       {
         "name": "Cryptocurrency (Bitcoin & Ethereum)",
         "expected_return": "Highly volatile (10-100% annually)",
         "duration": "3-7 years",
-        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
+
       },
       {
         "name": "Government Bonds",
         "expected_return": "2-5% annually",
         "duration": "5-30 years",
-        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
+
       },
       {
         "name": "Gold & Precious Metals",
         "expected_return": "4-6% annually",
         "duration": "5+ years",
-        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
+
       },
       {
         "name": "Mutual Funds",
         "expected_return": "6-10% annually",
         "duration": "5+ years",
-        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
+
       },
       {
         "name": "Private Equity",
         "expected_return": "15-25% annually",
         "duration": "7-10 years",
-        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
       }
     ]
   }
