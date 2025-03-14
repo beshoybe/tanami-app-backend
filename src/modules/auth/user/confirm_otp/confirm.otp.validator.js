@@ -1,5 +1,5 @@
 import {z} from 'zod'
-import validateRequest from '../../../../middleware/validateRequest';
+import validateRequest from '../../../../middleware/validateRequest.js';
 const confirmOtpValidator =  z.object({
     otp : z
         .string({

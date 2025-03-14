@@ -1,5 +1,5 @@
-import User from "../../../../../DB/models/user.model";
-import { generateToken } from "../../../../utils/token.helper";
+import User from "../../../../../DB/models/user.model.js";
+import { generateToken } from "../../../../utils/token.helper.js";
 
 const confirmOtpController = async (req, res) => {  
     try {
