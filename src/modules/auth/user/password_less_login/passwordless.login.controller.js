@@ -10,7 +10,7 @@ const passwordLessLoginController = async (req, res) => {
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
         const
-        user = await User.findById(decoded.id);
+        user = await User.findByPk(decoded.id);
         if (!user) {
             return res.status(404).json({ message:req.t("error.userNotFound") });
         }
