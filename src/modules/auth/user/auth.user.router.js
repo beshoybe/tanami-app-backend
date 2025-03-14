@@ -8,7 +8,8 @@ import forgetPasswordValidator from './forget_password/forget.password.validator
 import userForgetPasswordController from './forget_password/forget.password.controller.js';
 import resetPasswordValidator from './reset_password/reset.password.validator.js';
 import userResetPasswordController from './reset_password/reset.password.controller.js';
-import passwordlessLoginValidation from './password_less_login/passwordless.login.validation.js';
+import passwordlessLoginValidator from './password_less_login/passwordless.login.validator.js';
+import passwordLessLoginController from './password_less_login/passwordless.login.controller.js';
 
 const authRouter = Router();
 
@@ -20,5 +21,5 @@ authRouter.post('/forget-password',forgetPasswordValidator,userForgetPasswordCon
 
 authRouter.post('/reset-password',resetPasswordValidator,userResetPasswordController);
 
-authRouter.post('/passwordless-login',passwordlessLoginValidation,passwordLessLoginController);
+authRouter.post('/passwordless-login',passwordlessLoginValidator,passwordLessLoginController);
 export default authRouter;

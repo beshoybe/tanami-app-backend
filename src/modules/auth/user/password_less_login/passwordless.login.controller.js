@@ -1,3 +1,6 @@
+import User from "../../../../../DB/models/user.model.js";
+import { generateToken } from "../../../../utils/token.helper.js";
+import jwt from 'jsonwebtoken';
 
 
 const passwordLessLoginController = async (req, res) => {
@@ -5,7 +8,7 @@ const passwordLessLoginController = async (req, res) => {
         const {token} = req.body;
         // ✅ Verify the token
         const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        
+
         const
         user = await User.findById(decoded.id);
         if (!user) {
@@ -28,3 +31,5 @@ const passwordLessLoginController = async (req, res) => {
         return res.status(500).json({ message: "Internal server error" });
     }
 };
+
+export default passwordLessLoginController;
