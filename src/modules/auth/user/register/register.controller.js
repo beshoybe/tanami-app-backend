@@ -5,20 +5,18 @@ import { Op } from 'sequelize'; // ✅ Import Sequelize operators
 
 const userRegisterController = asyncHandler(async (req, res) => {
     try {
-        const { name, email, password, phone } = req.body;
+        const { name, email, password } = req.body;
 
         // ✅ Check if email or phone already exists using Sequelize
         const existingUser = await User.findOne({ 
             where: { 
-                [Op.or]: [{ email }, { phone }]  // ✅ Use Op.or
+                [Op.or]: [{ email }]  // ✅ Use Op.or
             } 
         });
 
         if (existingUser) {
             return res.status(400).json({
-                message: existingUser.email === email 
-                    ? req.t("error.emailAlreadyExists") 
-                    : req.t("error.phoneAlreadyExists")
+                message: req.t("error.emailAlreadyExists") 
             });
         }
 
@@ -27,7 +25,6 @@ const userRegisterController = asyncHandler(async (req, res) => {
             name,
             email,
             password, // Will be hashed using a Sequelize hook
-            phone,
         });
 
         const tokenPayload = {

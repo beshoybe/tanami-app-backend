@@ -11,11 +11,6 @@ const User = sequelizeDb.define("User", {
         unique: "unique_email_constraint",
         validate: { isEmail: true }
     },
-    phone: { 
-        type: DataTypes.STRING, 
-        allowNull: false, 
-        unique: "unique_phone_constraint"
-    },
     password: { type: DataTypes.STRING, allowNull: false },
     type: { 
         type: DataTypes.ENUM("normal", "google", "apple"), 

@@ -14,9 +14,6 @@ const userRegisterValidator = z.object({
   password: z.string({
     required_error: "validation.password.required",
   }).nonempty({ message: "validation.password.required" }),
-  phone: z.string({
-    required_error: "validation.phone.required",
-  }).nonempty({ message: "validation.phone.required" }),
 });
 
 export default validateRequest(userRegisterValidator);
