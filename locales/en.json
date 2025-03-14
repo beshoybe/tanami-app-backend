@@ -41,6 +41,7 @@
         "userRegistred":"User registered successfully",
         "userLoggedIn":"User logged in successfully",
         "otpSent":"OTP sent successfully",
-        "passwordResetSuccess":"Password reset successfully"
+        "passwordResetSuccess":"Password reset successfully",
+        "otpVerified":"OTP verified successfully"
       }
 }

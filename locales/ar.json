@@ -41,7 +41,8 @@
       "userRegistred": "تم تسجيل المستخدم بنجاح",
       "userLoggedIn": "تم تسجيل دخول المستخدم بنجاح",
       "otpSent":"تم ارسال الكود بنجاح",
-      "passwordResetSuccess":"تم تغيير كلمة المرور بنجاح"
+      "passwordResetSuccess":"تم تغيير كلمة المرور بنجاح",
+      "otpVerified":"تم التحقق من الكود بنجاح"
 
     }
 }

@@ -10,6 +10,8 @@ import resetPasswordValidator from './reset_password/reset.password.validator.js
 import userResetPasswordController from './reset_password/reset.password.controller.js';
 import passwordlessLoginValidator from './password_less_login/passwordless.login.validator.js';
 import passwordLessLoginController from './password_less_login/passwordless.login.controller.js';
+import confirmOtpValidator from './confirm_otp/confirm.otp.validator.js';
+import confirmOtpController from './confirm_otp/confirm.otp.controller.js';
 
 const authRouter = Router();
 
@@ -22,4 +24,6 @@ authRouter.post('/forget-password',forgetPasswordValidator,userForgetPasswordCon
 authRouter.post('/reset-password',resetPasswordValidator,userResetPasswordController);
 
 authRouter.post('/passwordless-login',passwordlessLoginValidator,passwordLessLoginController);
+
+authRouter.post('/confirm-otp',confirmOtpValidator,confirmOtpController);
 export default authRouter;
