@@ -1,0 +1,33 @@
+
+{
+    "total":50000,
+    "highest": 2500,
+    "lowest": 300,
+    "history":[
+        {
+          "month": "November",
+          "profit": 2000,
+          "loss": 500
+        },
+        {
+          "month": "December",
+          "profit": 1500,
+          "loss": 700
+        },
+        {
+          "month": "January",
+          "profit": 1800,
+          "loss": 400
+        },
+        {
+          "month": "February",
+          "profit": 2200,
+          "loss": 600
+        },
+        {
+          "month": "March",
+          "profit": 2500,
+          "loss": 300
+        }
+      ]
+}

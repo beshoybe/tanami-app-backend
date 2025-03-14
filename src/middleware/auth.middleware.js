@@ -12,7 +12,7 @@ export const protectRoute = asyncHandler(async (req, res, next) => {
   
     const decode = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
   
-    const user = await User.findById(decode.id);
+    const user = await User.findByPk(decode.id);
     if (!user) return next(new Error('user is not exist'), { cause: 401 });
     req.user = user;
     next();
