@@ -15,7 +15,7 @@ const userRegisterController = asyncHandler(async (req, res) => {
         });
 
         if (existingUser) {
-            return res.status(400).json({
+            return res.status(403).json({
                 message: req.t("error.emailAlreadyExists") 
             });
         }
