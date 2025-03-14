@@ -18,7 +18,7 @@ const userRegisterController = asyncHandler(async (req, res) => {
             return res.status(400).json({
                 message: existingUser.email === email 
                     ? req.t("error.emailAlreadyExists") 
-                    : req.t("phoneAlreadyExists")
+                    : req.t("error.phoneAlreadyExists")
             });
         }
 
