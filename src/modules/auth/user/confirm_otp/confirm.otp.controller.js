@@ -19,7 +19,7 @@ const confirmOtpController = async (req, res) => {
         console.log(new Date(), user.otpExpires);
         // ✅ Check if OTP is expired
         if (user.otpExpires && new Date() > user.otpExpires) {
-            return res.status(400).json({ message: req.t("error.expiredOTP") });
+            return res.status(410).json({ message: req.t("error.expiredOTP") });
         }
         const tokenPayload = {
             id: user.id,
