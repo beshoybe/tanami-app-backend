@@ -1,10 +1,14 @@
 import User from "../../../../../DB/models/user.model.js";
 import { asyncHandler } from "../../../../utils/asyncHandling.js";
 import { generateToken } from "../../../../utils/token.helper.js";
+import jwt from 'jsonwebtoken';
 
 const userResetPasswordController = asyncHandler(async (req, res) => {
     try {
-        const { email, otp, password } = req.body;
+        const { token, password } = req.body;
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+        const { email } = decoded;
 
         // ✅ Find the user
         const user = await User.findOne({ where: { email } });
@@ -12,17 +16,6 @@ const userResetPasswordController = asyncHandler(async (req, res) => {
         if (!user) {
             return res.status(400).json({ message: req.t("error.emailNotRegistered") });
         }
-
-        // ✅ Check if OTP is correct
-        if (!user.otp || user.otp !== otp) {
-            return res.status(400).json({ message: req.t("error.invalidOTP") });
-        }
-
-        // ✅ Check if OTP is expired
-        if (user.otpExpiry && new Date() > user.otpExpiry) {
-            return res.status(400).json({ message: req.t("error.expiredOTP") });
-        }
-
 
         // ✅ Update user's password & clear OTP fields
         user.password = password;

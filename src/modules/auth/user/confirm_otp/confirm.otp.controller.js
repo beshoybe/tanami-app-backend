@@ -1,4 +1,5 @@
 import User from "../../../../../DB/models/user.model";
+import { generateToken } from "../../../../utils/token.helper";
 
 const confirmOtpController = async (req, res) => {  
     try {
@@ -20,8 +21,15 @@ const confirmOtpController = async (req, res) => {
         if (user.otpExpiry && new Date() > user.otpExpiry) {
             return res.status(400).json({ message: req.t("error.expiredOTP") });
         }
+        const tokenPayload = {
+            id: user.id,
+            email: user.email,
+        };
 
-        return res.status(200).json({ message: req.t("response.otpVerified") });
+        return res.status(200).json({ message: req.t("response.otpVerified"), data: {
+            token: generateToken(tokenPayload, "5m"),
+        }
+        });
     } catch (error) {
         console.log(error);
         return res.status(500).json({ message: req.t("error.serverError") });
