@@ -1,0 +1,53 @@
+{
+    "investments": [
+      {
+        "name": "الأسهم (صندوق مؤشر S&P ٥٠٠)",
+        "expected_return": "٨-١٢٪ سنويًا",
+        "duration": "أكثر من ٥ سنوات",
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
+      },
+      {
+        "name": "العقارات (عقارات للإيجار)",
+        "expected_return": "٦-١٢٪ سنويًا",
+        "duration": "أكثر من ١٠ سنوات",
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
+      },
+      {
+        "name": "العملات الرقمية (البيتكوين والإيثيريوم)",
+        "expected_return": "متقلب جدًا (١٠-١٠٠٪ سنويًا)",
+        "duration": "٣-٧ سنوات",
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
+      },
+      {
+        "name": "السندات الحكومية",
+        "expected_return": "٢-٥٪ سنويًا",
+        "duration": "٥-٣٠ سنة",
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
+      },
+      {
+        "name": "الذهب والمعادن الثمينة",
+        "expected_return": "٤-٦٪ سنويًا",
+        "duration": "أكثر من ٥ سنوات",
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
+      },
+      {
+        "name": "صناديق الاستثمار المشتركة",
+        "expected_return": "٦-١٠٪ سنويًا",
+        "duration": "أكثر من ٥ سنوات",
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
+      },
+      {
+        "name": "الملكية الخاصة",
+        "expected_return": "١٥-٢٥٪ سنويًا",
+        "duration": "٧-١٠ سنوات",
+        "pdf_link": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAgZiCuPuxMBjAPo__uWVM6ViyVjWzBhGlA&s"
+      }
+    ]
+}
